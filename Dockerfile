@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:18.04
 RUN apt-get -y update \
 	&& apt-get install -y wget gcc g++ m4 make bison build-essential csh autoconf automake gettext texinfo help2man indent autopoint libtool \
 	&& rm -rf /var/lib/apt/lists/*
